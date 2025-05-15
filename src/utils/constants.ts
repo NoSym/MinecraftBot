@@ -1,1 +1,0 @@
-export const CONSTANT_THING = 'constant'
