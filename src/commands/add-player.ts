@@ -47,7 +47,7 @@ const execute = async (interaction: CommandInteraction) => {
 
 const addPlayer: CustomCommand = {
   data: new SlashCommandBuilder()
-    .setName('whitelist add')
+    .setName('whitelist')
     .setDescription('Whitelist minecraft java username')
     .addStringOption((option) => option.setName(NAME).setDescription('Minecraft Java Username').setRequired(true)),
   enabled: true,
