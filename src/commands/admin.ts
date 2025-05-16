@@ -15,9 +15,10 @@ type WhitelistedUser = {
 const execute = async (interaction: CommandInteraction) => {
   switch (interaction.options.getSubcommand()) {
     case REMOVE:
-      removePlayer(interaction)
+      await removePlayer(interaction)
+      break
     case LIST:
-      showWhitelist(interaction)
+      await showWhitelist(interaction)
       break
   }
 }
